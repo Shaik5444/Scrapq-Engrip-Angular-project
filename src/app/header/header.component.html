@@ -1,0 +1,152 @@
+<!-- <p>header works!</p> -->
+
+<header>
+  <div class="new-row">
+    <!-- new -->
+    <div class="container">
+      <input type="checkbox" id="menu-box" class="menu-box" />
+      <label for="menu-box" class="menu-icon">&#9776;</label>
+
+      <ul
+        id="menu"
+        class="nav-links"
+        style="margin-right: 100px; margin: 5px 0px"
+      >
+        <li>
+          <a
+            style="color: white"
+            routerLink="/about-us"
+            routerLinkActive="link-active"
+            >About Us
+          </a>
+        </li>
+        <li>
+          <a
+            style="color: white"
+            routerLink="/book-appointment"
+            routerLinkActive="link-active"
+            >Book Appointment</a
+          >
+        </li>
+        <li>
+          <a
+            style="color: white"
+            routerLink="/our-services"
+            routerLinkActive="link-active"
+            >Our Services
+          </a>
+        </li>
+        <li>
+          <a
+            style="color: white"
+            routerLink="/faqs"
+            routerLinkActive="link-active"
+            >Facts & FAQ's
+          </a>
+        </li>
+        <li>
+          <a
+            style="color: white"
+            routerLink="/contact-us"
+            routerLinkActive="link-active"
+            >Contact Us
+          </a>
+        </li>
+        <!-- new -->
+        <li>
+          <a
+            style="color: white"
+            routerLink="/privacy-policy"
+            routerLinkActive="link-active"
+            >Privacy Policy
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <section class="second-row">
+    <img
+      style="
+        max-width: 215px;
+        max-height: 65px;
+        margin-top: 5px;
+        padding: 0;
+        margin-left: 40px;
+      "
+      src="assets/scrapq.png"
+      routerLink=""
+      class="logo"
+    />
+    <div
+      style="
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+      "
+    >
+      <!-- <select
+      [(ngModel)]="userCity"
+      (change)="saveUserCity()"
+      class="city-select"
+    >
+      <option [value]="city.name" *ngFor="let city of citiesData">
+        {{ city.name }}
+      </option>
+    </select> -->
+      <img
+        src="assets/map-marker.png"
+        style="height: 20px; margin-left: 2px; margin-right: 8px"
+        alt="mapicon"
+        class="map-icon"
+      />
+      <select name="" id="location">
+        <option value="">Hyderabad</option>
+        <option value="">visakhapatnam</option>
+      </select>
+      <!-- <button
+        class="menu-icon"
+        mat-icon-button
+        (click)="openSideMenu()"
+        style="margin-left: 5px"
+      >
+        <mat-icon color="primary">menu</mat-icon> -->
+      <!-- <mat-icon color="primary" *ngIf="sidenav.opened">close</mat-icon> -->
+      <!-- </button> -->
+
+      <div
+        class="social-media-icons"
+        style="margin-right: 40px; margin-top: 5px"
+      >
+        <a
+          href="https://www.facebook.com/people/Click2Clean/100091928115575/?mibextid=LQQJ4d"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img src="assets/Facebook.svg" height="25" width="25" />
+        </a>
+        <a
+          href="https://twitter.com/click2clean_aw?s=11&t=d_mslZ7X0sEdC4o5Xsg7eQ"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img src="assets/Twitter.svg" height="25" width="25" />
+        </a>
+        <a
+          href="https://www.instagram.com/click2clean.in/?igshid=YmMyMTA2M2Y"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img src="assets/Instagram.svg" height="25" width="25" />
+        </a>
+        <a
+          href="https://in.pinterest.com/clicktoclean3/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img src="assets/pininterest.svg" height="25" width="25" />
+        </a>
+      </div>
+    </div>
+  </section>
+</header>

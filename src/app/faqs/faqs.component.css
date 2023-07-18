@@ -1,0 +1,181 @@
+.body-container {
+  margin-left: 400px;
+}
+.faqs-image {
+  height: 400px;
+  padding: 10px;
+}
+.combine {
+  position: absolute;
+  margin-bottom: 800px;
+  margin-left: 600px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  position: relative;
+
+  @media screen and (min-width: 768px) {
+    gap: 100px;
+
+    .faqs-image {
+      position: -webkit-sticky;
+      /* Safari */
+      margin-top: 5;
+      position: sticky;
+      top: 0;
+      padding-top: 10px;
+      height: 400px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .faqs-image {
+      height: 300px;
+    }
+    /* .combine {
+      position: absolute;
+      margin-bottom: 600px;
+      margin-left: 0;
+    } */
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 10px;
+  }
+}
+
+.title {
+  color: #048242;
+  text-align: center;
+  font-size: bold;
+  margin-right: 220px;
+}
+
+.accordion {
+  display: block;
+  width: 100%;
+  max-width: 500px;
+}
+
+.accordion-item {
+  display: block;
+  border: solid 1.5px #6dbd48;
+  border-radius: 30px;
+  margin-bottom: 20px;
+}
+
+.accordion-item-header {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 30px;
+  color: #048242;
+  font-weight: 500;
+}
+
+.accordion-item-description {
+  font-size: 0.85em;
+  color: #999;
+}
+
+.accordion-item-header,
+.accordion-item-body {
+  padding: 16px;
+}
+
+.accordion-item-header:hover {
+  cursor: pointer;
+  background-color: #eee;
+}
+
+/* // .logo {
+//   cursor: pointer;
+// } */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 768px) {
+  .text-over-carousel {
+    font-size: 30px;
+    top: 20%;
+    left: 10%;
+    transform: translateY(-50%);
+    z-index: 999;
+  }
+
+  .social-media-icons {
+    display: none;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .logo {
+    width: 120px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 601px) {
+  .booking-card {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+    z-index: 999;
+  }
+
+  .text-over-carousel {
+    top: 40%;
+    left: 5%;
+    font-size: 30px;
+    transform: translateY(-50%);
+    z-index: 999;
+  }
+
+  .logo {
+    width: 150px;
+    margin-left: 2px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .text-over-carousel {
+    top: 40%;
+    left: 10%;
+    font-size: 40px;
+    transform: translateY(-50%);
+    z-index: 999;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  .logo {
+    width: 300px;
+    margin-top: -35px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .booking-card {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 40px;
+    z-index: 999;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
